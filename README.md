@@ -17,7 +17,7 @@
 
 ###
 
-<h1 align="center">Hello World! Here with me Joshua Remedial Syeba</h1>
+<h1 align="center">Hello World! Here with me Joshua Remedial Syeba Data Enthusiast passionate about Machine Learning, Deep Learning and Data Dashboard</h1>
 
 ###
 
