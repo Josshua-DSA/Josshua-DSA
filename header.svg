@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120" role="img" aria-label="Connect">
+  <defs>
+    <linearGradient id="hb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#030c1b"/>
+      <stop offset="50%"  stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#030c1b"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#ffb703" stop-opacity="0.9"/>
+      <stop offset="50%"  stop-color="#00f0ff"/>
+      <stop offset="80%"  stop-color="#ffb703" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="hglow" x="-40%" y="-140%" width="180%" height="380%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="hgrid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M18 0H0V18" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.07"/>
+    </pattern>
+  </defs>
+
+
+  <g filter="url(#hglow)">
+    <text x="450.0" y="52" text-anchor="middle"
+          font-family="'Fira Code','JetBrains Mono',ui-monospace,monospace"
+          font-size="30" font-weight="800" letter-spacing="9" fill="#00f0ff">CONNECT</text>
+  </g>
+
+  <text x="450.0" y="78" text-anchor="middle"
+        font-family="'Fira Code',ui-monospace,monospace"
+        font-size="12" font-weight="700" letter-spacing="4" fill="#ffb703">
+    // ESTABLISHING UPLINK &#8212; JOSHUA REMEDIAL SYEBA
+  </text>
+
+  <rect x="80" y="94" width="740" height="1.8" fill="url(#rule)">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <g fill="#00f0ff">
+    <circle cx="150.0" cy="94.8" r="2.6">
+      <animate attributeName="cx" values="150.0;750.0;150.0"
+               dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
