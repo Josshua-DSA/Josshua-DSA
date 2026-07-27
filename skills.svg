@@ -70,10 +70,10 @@
 <path class="corner" stroke="#00f0ff" stroke-width="2.5" fill="none" opacity=".9" d="M24 540 L24 576 L60 576"/>
 <path class="corner" stroke="#00f0ff" stroke-width="2.5" fill="none" opacity=".9" d="M876 540 L876 576 L840 576"/>
 
-<text x="450" y="58" text-anchor="middle" class="title" fill="#00f0ff" filter="url(#softglow)">ARSENAL</text>
-<rect class="glowbar" x="370" y="72" width="160" height="2.5" fill="#ffb703" filter="url(#glow)"/>
-<text x="447" y="58" text-anchor="middle" class="title" fill="#00f0ff" style="animation: glitch 6s infinite; opacity:0;">ARSENAL</text>
-<text x="453" y="58" text-anchor="middle" class="title" fill="#f72585" style="animation: glitch 6s infinite .1s; opacity:0;">ARSENAL</text>
+<text x="450" y="58" text-anchor="middle" class="title" fill="#00f0ff" filter="url(#softglow)">TECH STACK</text>
+<rect class="glowbar" x="350" y="72" width="200" height="2.5" fill="#ffb703" filter="url(#glow)"/>
+<text x="447" y="58" text-anchor="middle" class="title" fill="#00f0ff" style="animation: glitch 6s infinite; opacity:0;">TECH STACK</text>
+<text x="453" y="58" text-anchor="middle" class="title" fill="#f72585" style="animation: glitch 6s infinite .1s; opacity:0;">TECH STACK</text>
 <rect x="0" y="0" width="900" height="40" fill="url(#scanGrad)" style="animation: scan 5s linear infinite;"/>
 
 <!-- CAT 1: ELECTRIC CYAN -->
