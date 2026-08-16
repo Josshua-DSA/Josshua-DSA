@@ -1,0 +1,62 @@
+name: Tic-Tac-Toe Game Engine
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  play-move:
+    if: startsWith(github.event.issue.title, 'ttt:')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Process Move
+        id: game
+        run: |
+          OUTPUT=$(python3 .github/scripts/tictactoe.py "${{ github.event.issue.title }}" "${{ github.event.issue.user.login }}")
+          echo "response<<EOF" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Commit and Push Board State
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md .github/game-state.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(game): update tic-tac-toe board state [skip ci]" && git push)
+
+      - name: Close Issue with Response
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commentBody = `### Tic-Tac-Toe Engine\n\n${{ steps.game.outputs.response }}\n\n*Check the updated game board on the [Profile README](https://github.com/${context.repo.owner}/${context.repo.repo})!*`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: commentBody
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['tic-tac-toe']
+            }).catch(() => {});

@@ -1,0 +1,27 @@
+{
+  "board": [
+    [
+      " ",
+      " ",
+      " "
+    ],
+    [
+      " ",
+      " ",
+      " "
+    ],
+    [
+      " ",
+      " ",
+      " "
+    ]
+  ],
+  "turn": "X",
+  "winner": null,
+  "last_player": "Josshua-DSA",
+  "scores": {
+    "visitor": 0,
+    "bot": 0,
+    "draws": 0
+  }
+}
