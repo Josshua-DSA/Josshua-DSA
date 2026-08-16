@@ -101,17 +101,11 @@
   <a href="https://github.com/Josshua-DSA" target="_blank">
     <img src="./github.svg" height="64" alt="GitHub" />
   </a>
-  <a href="https://t.me" target="_blank">
-    <img src="./telegram.svg" height="64" alt="Telegram" />
-  </a>
   <br/>
-  <a href="https://x.com" target="_blank">
-    <img src="./x.svg" height="64" alt="X (Twitter)" />
-  </a>
-  <a href="https://instagram.com" target="_blank">
+  <a href="https://instagram.com/jojieeezz" target="_blank">
     <img src="./instagram.svg" height="64" alt="Instagram" />
   </a>
-  <a href="https://threads.net" target="_blank">
-    <img src="./threads.svg" height="64" alt="Threads" />
+  <a href="https://t.me" target="_blank">
+    <img src="./telegram.svg" height="64" alt="Telegram" />
   </a>
 </div>

@@ -14,8 +14,8 @@
       }
       .sublabel {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 10px;
-        letter-spacing: 1px;
+        font-size: 9.5px;
+        letter-spacing: 0.5px;
         fill: #a1a1aa;
       }
     </style>
@@ -32,7 +32,7 @@
 
   <!-- Text -->
   <text x="56" y="32" class="label">LINKEDIN</text>
-  <text x="56" y="47" class="sublabel">/in/joshua-remedial</text>
+  <text x="56" y="47" class="sublabel">/in/joshua-remedial-syeba</text>
 
   <!-- Arrow -->
   <g stroke="#71717a" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
