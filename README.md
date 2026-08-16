@@ -82,9 +82,11 @@
 
 <br/>
 
-<!-- ==================== LOCAL STATS & TELEMETRY ==================== -->
+<!-- ==================== GITHUB STREAK CONTRIBUTOR ==================== -->
 <div align="center">
-  <img width="100%" src="./stats.svg" alt="Operational Profile & Practice Matrix" />
+  <a href="https://github.com/Josshua-DSA">
+    <img width="100%" src="https://streak-stats.demolab.com?user=Josshua-DSA&theme=dark&background=121215&border=27272a&stroke=27272a&ring=10b981&fire=10b981&currStreakNum=ffffff&sideNums=e4e4e7&currStreakLabel=a1a1aa&sideLabels=71717a&dates=71717a&border_radius=10" alt="GitHub Streak Contributor" />
+  </a>
 </div>
 
 <br/>
