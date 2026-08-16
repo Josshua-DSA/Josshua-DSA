@@ -100,21 +100,21 @@
   <table>
     <thead>
       <tr>
-        <th align="center">Col 0</th>
-        <th align="center">Col 1</th>
-        <th align="center">Col 2</th>
+        <th width="90" align="center">Col 0</th>
+        <th width="90" align="center">Col 1</th>
+        <th width="90" align="center">Col 2</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td align="center">[` · `](https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:0,0&body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+0+col+0.+Please+do+not+modify+the+title.)</td><td align="center">[` · `](https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:0,1&body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+0+col+1.+Please+do+not+modify+the+title.)</td><td align="center">[` · `](https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:0,2&body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+0+col+2.+Please+do+not+modify+the+title.)</td></tr>
-      <tr><td align="center">[` · `](https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:1,0&body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+1+col+0.+Please+do+not+modify+the+title.)</td><td align="center">[` · `](https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:1,1&body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+1+col+1.+Please+do+not+modify+the+title.)</td><td align="center">[` · `](https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:1,2&body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+1+col+2.+Please+do+not+modify+the+title.)</td></tr>
-      <tr><td align="center">[` · `](https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:2,0&body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+2+col+0.+Please+do+not+modify+the+title.)</td><td align="center">[` · `](https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:2,1&body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+2+col+1.+Please+do+not+modify+the+title.)</td><td align="center">[` · `](https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:2,2&body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+2+col+2.+Please+do+not+modify+the+title.)</td></tr>
+      <tr><td align="center"><a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:0,0&amp;body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+0+col+0.+Please+do+not+modify+the+title."><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a></td><td align="center"><a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:0,1&amp;body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+0+col+1.+Please+do+not+modify+the+title."><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a></td><td align="center"><a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:0,2&amp;body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+0+col+2.+Please+do+not+modify+the+title."><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a></td></tr>
+      <tr><td align="center"><a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:1,0&amp;body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+1+col+0.+Please+do+not+modify+the+title."><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a></td><td align="center"><a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:1,1&amp;body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+1+col+1.+Please+do+not+modify+the+title."><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a></td><td align="center"><a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:1,2&amp;body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+1+col+2.+Please+do+not+modify+the+title."><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a></td></tr>
+      <tr><td align="center"><a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:2,0&amp;body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+2+col+0.+Please+do+not+modify+the+title."><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a></td><td align="center"><a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:2,1&amp;body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+2+col+1.+Please+do+not+modify+the+title."><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a></td><td align="center"><a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:move:2,2&amp;body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+2+col+2.+Please+do+not+modify+the+title."><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a></td></tr>
     </tbody>
   </table>
   <br/>
   <sub>Scoreboard — <strong>Community (X):</strong> 0 | <strong>Bot (O):</strong> 0 | <strong>Draws:</strong> 0</sub>
   <br/><br/>
-  <a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:reset&body=Click+%22Submit+new+issue%22+to+restart+the+Tic-Tac-Toe+game."><strong>[ ↻ RESTART NEW GAME ]</strong></a>
+  <a href="https://github.com/Josshua-DSA/Josshua-DSA/issues/new?title=ttt:reset&amp;body=Click+%22Submit+new+issue%22+to+restart+the+Tic-Tac-Toe+game."><strong>[ ↻ RESTART NEW GAME ]</strong></a>
 </div>
 <!-- TTT-END -->
 

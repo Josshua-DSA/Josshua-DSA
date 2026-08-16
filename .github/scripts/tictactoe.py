@@ -113,26 +113,26 @@ def generate_board_markdown(state):
     else:
         status_msg = "<strong>// YOUR TURN (X):</strong> Click any open coordinate <code>[ · ]</code> below to place your move."
 
-    # Build Markdown table
+    # Build HTML table cells
     def render_cell(r, c):
         val = board[r][c]
         if val == "X":
-            return "` X `"
+            return "<b><code>&nbsp;&nbsp;X&nbsp;&nbsp;</code></b>"
         elif val == "O":
-            return "` O `"
+            return "<b><code>&nbsp;&nbsp;O&nbsp;&nbsp;</code></b>"
         else:
             if winner is not None:
-                return "` · `"
+                return "<code>&nbsp;&nbsp;·&nbsp;&nbsp;</code>"
             issue_url = (
                 f"https://github.com/{REPO_NAME}/issues/new?"
-                f"title=ttt:move:{r},{c}&"
+                f"title=ttt:move:{r},{c}&amp;"
                 f"body=Click+%22Submit+new+issue%22+to+place+your+move+at+row+{r}+col+{c}.+Please+do+not+modify+the+title."
             )
-            return f"[` · `]({issue_url})"
+            return f'<a href="{issue_url}"><code>&nbsp;&nbsp;·&nbsp;&nbsp;</code></a>'
 
     reset_url = (
         f"https://github.com/{REPO_NAME}/issues/new?"
-        f"title=ttt:reset&"
+        f"title=ttt:reset&amp;"
         f"body=Click+%22Submit+new+issue%22+to+restart+the+Tic-Tac-Toe+game."
     )
 
@@ -145,9 +145,9 @@ def generate_board_markdown(state):
         "  <table>",
         "    <thead>",
         "      <tr>",
-        "        <th align=\"center\">Col 0</th>",
-        "        <th align=\"center\">Col 1</th>",
-        "        <th align=\"center\">Col 2</th>",
+        "        <th width=\"90\" align=\"center\">Col 0</th>",
+        "        <th width=\"90\" align=\"center\">Col 1</th>",
+        "        <th width=\"90\" align=\"center\">Col 2</th>",
         "      </tr>",
         "    </thead>",
         "    <tbody>",
