@@ -1,136 +1,217 @@
-<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<style>
-  .title { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 800; font-size: 30px; letter-spacing: 6px; fill: #00f0ff; }
-  .cat { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 3px; }
-  .pill-text { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 800; font-size: 13px; }
-  .trace { fill: none; stroke-width: 2; stroke-linecap: round; animation: travel 3.2s linear infinite; }
-  @keyframes travel { to { stroke-dashoffset: -400; } }
-  .glowbar { animation: pulse 2.6s ease-in-out infinite; }
-  .ring { animation: pulse 2.6s ease-in-out infinite; }
-  .corner { stroke: #00f0ff; stroke-width: 2.5; fill: none; opacity: .9; }
-  .grid { stroke: #00f0ff; stroke-opacity: .05; stroke-width: 1; }
-  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
-  @keyframes drift { 0% { transform: translateX(0); } 50% { transform: translateX(14px); } 100% { transform: translateX(0); } }
-  @keyframes glitch { 0%, 92%, 100% { transform: translate(0,0); opacity: 0; } 93% { transform: translate(-3px,1px); opacity: .8; } 95% { transform: translate(3px,-1px); opacity: .8; } 97% { transform: translate(-2px,0); opacity: .6; } }
-  @keyframes scan { 0% { transform: translateY(-40px); } 100% { transform: translateY(640px); } }
-  .ember { animation: rise linear infinite; }
-  @keyframes rise { 0% { transform: translateY(0); opacity: 0; } 10% { opacity: .9; } 90% { opacity: .5; } 100% { transform: translateY(-560px); opacity: 0; } }
-</style>
+<svg width="900" height="510" viewBox="0 0 900 510" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Card Background Gradient -->
+    <radialGradient id="stackBg" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="45%" stop-color="#0e0e11"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </radialGradient>
 
-<radialGradient id="bgGrad" cx="50%" cy="15%" r="90%">
-  <stop offset="0%" stop-color="#0a192f"/>
-  <stop offset="45%" stop-color="#030c1b"/>
-  <stop offset="100%" stop-color="#010610"/>
-</radialGradient>
+    <!-- Subtle Dot Grid -->
+    <pattern id="skillGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#71717a" fill-opacity="0.10"/>
+    </pattern>
 
-<radialGradient id="vignette" cx="50%" cy="50%" r="75%">
-  <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
-  <stop offset="100%" stop-color="#000000" stop-opacity="0.65"/>
-</radialGradient>
+    <!-- Top Shimmer Gradient -->
+    <linearGradient id="cardTopGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#27272a" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#71717a" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#27272a" stop-opacity="0.2"/>
+    </linearGradient>
 
-<linearGradient id="frameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-  <stop offset="0%" stop-color="#00f0ff"><animate attributeName="stop-color" values="#00f0ff;#f72585;#ffb703;#00f0ff" dur="8s" repeatCount="indefinite"/></stop>
-  <stop offset="100%" stop-color="#f72585"><animate attributeName="stop-color" values="#f72585;#ffb703;#00f0ff;#f72585" dur="8s" repeatCount="indefinite"/></stop>
-</linearGradient>
+    <style>
+      .section-eyebrow {
+        font-family: 'JetBrains Mono', 'Geist Mono', monospace;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        fill: #a1a1aa;
+      }
+      .section-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Geist', sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        fill: #ffffff;
+      }
+      .card-header {
+        font-family: 'JetBrains Mono', 'Geist Mono', monospace;
+        font-size: 11.5px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        fill: #f4f4f5;
+      }
+      .pill-bg {
+        fill: #18181b;
+        stroke: #27272a;
+        stroke-width: 1;
+        transition: all 0.2s ease;
+      }
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+        font-size: 11.5px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        fill: #d4d4d8;
+      }
+    </style>
+  </defs>
 
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-  <feGaussianBlur stdDeviation="4" result="blur"/>
-  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter>
-<filter id="softglow" x="-80%" y="-80%" width="260%" height="260%">
-  <feGaussianBlur stdDeviation="8" result="blur"/>
-  <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter>
-<linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-  <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
-  <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.1"/>
-  <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
-</linearGradient>
-</defs>
+  <!-- Container Base -->
+  <rect x="0" y="0" width="900" height="510" rx="14" fill="url(#stackBg)"/>
+  <rect x="0" y="0" width="900" height="510" rx="14" fill="url(#skillGrid)"/>
+  <rect x="1" y="1" width="898" height="508" rx="13" fill="none" stroke="#27272a" stroke-width="1"/>
 
-<rect x="0" y="0" width="900" height="600" rx="18" fill="url(#bgGrad)"/>
-<rect x="0" y="0" width="900" height="600" rx="18" fill="url(#vignette)"/>
+  <!-- Top Ambient Shimmer Border -->
+  <path d="M 14 1 L 886 1" stroke="url(#cardTopGlow)" stroke-width="1.2"/>
 
-<g clip-path="none">
-  <g style="animation: drift 12s ease-in-out infinite;">
-    <line class="grid" x1="0" y1="60" x2="900" y2="60"/>
-    <line class="grid" x1="0" y1="180" x2="900" y2="180"/>
-    <line class="grid" x1="0" y1="300" x2="900" y2="300"/>
-    <line class="grid" x1="0" y1="420" x2="900" y2="420"/>
-    <line class="grid" x1="0" y1="540" x2="900" y2="540"/>
+  <!-- Section Header -->
+  <text x="450" y="44" text-anchor="middle" class="section-eyebrow">// ARCHITECTURE &amp; TOOLING</text>
+  <text x="450" y="74" text-anchor="middle" class="section-title">TECHNICAL ECOSYSTEM</text>
+  <line x1="410" y1="86" x2="490" y2="86" stroke="#27272a" stroke-width="1"/>
+
+  <!-- ==================== CARD 1: DATA ANALYSIS & VIZ ==================== -->
+  <g transform="translate(24, 106)">
+    <rect x="0" y="0" width="420" height="180" rx="10" fill="#121215" stroke="#27272a" stroke-width="1"/>
+    <text x="20" y="32" class="card-header">01 // DATA ANALYSIS &amp; VISUALIZATION</text>
+    <line x1="20" y1="44" x2="400" y2="44" stroke="#27272a" stroke-width="1"/>
+    
+    <!-- Row 1 -->
+    <g transform="translate(20, 60)">
+      <rect class="pill-bg" x="0" y="0" width="88" height="30" rx="6"/>
+      <text class="pill-text" x="44" y="19" text-anchor="middle">Power BI</text>
+
+      <rect class="pill-bg" x="96" y="0" width="82" height="30" rx="6"/>
+      <text class="pill-text" x="137" y="19" text-anchor="middle">Tableau</text>
+
+      <rect class="pill-bg" x="186" y="0" width="118" height="30" rx="6"/>
+      <text class="pill-text" x="245" y="19" text-anchor="middle">Looker Studio</text>
+
+      <rect class="pill-bg" x="312" y="0" width="68" height="30" rx="6"/>
+      <text class="pill-text" x="346" y="19" text-anchor="middle">D3.js</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(20, 102)">
+      <rect class="pill-bg" x="0" y="0" width="110" height="30" rx="6"/>
+      <text class="pill-text" x="55" y="19" text-anchor="middle">SQL Analytics</text>
+
+      <rect class="pill-bg" x="118" y="0" width="160" height="30" rx="6"/>
+      <text class="pill-text" x="198" y="19" text-anchor="middle">Exploratory Analysis</text>
+
+      <rect class="pill-bg" x="286" y="0" width="94" height="30" rx="6"/>
+      <text class="pill-text" x="333" y="19" text-anchor="middle">Dashboarding</text>
+    </g>
   </g>
-</g>
 
-<rect x="3" y="3" width="894" height="594" rx="16" fill="none" stroke="url(#frameGrad)" stroke-width="5" opacity="0.25" filter="url(#softglow)"/>
-<rect x="3" y="3" width="894" height="594" rx="16" fill="none" stroke="url(#frameGrad)" stroke-width="2.2" opacity="0.75"/>
+  <!-- ==================== CARD 2: DATA SCIENCE & ML ==================== -->
+  <g transform="translate(456, 106)">
+    <rect x="0" y="0" width="420" height="180" rx="10" fill="#121215" stroke="#27272a" stroke-width="1"/>
+    <text x="20" y="32" class="card-header">02 // DATA SCIENCE &amp; ML</text>
+    <line x1="20" y1="44" x2="400" y2="44" stroke="#27272a" stroke-width="1"/>
+    
+    <!-- Row 1 -->
+    <g transform="translate(20, 60)">
+      <rect class="pill-bg" x="0" y="0" width="76" height="30" rx="6"/>
+      <text class="pill-text" x="38" y="19" text-anchor="middle">Python</text>
 
-<path class="corner" stroke="#00f0ff" stroke-width="2.5" fill="none" opacity=".9" d="M24 60 L24 24 L60 24"/>
-<path class="corner" stroke="#00f0ff" stroke-width="2.5" fill="none" opacity=".9" d="M876 60 L876 24 L840 24"/>
-<path class="corner" stroke="#00f0ff" stroke-width="2.5" fill="none" opacity=".9" d="M24 540 L24 576 L60 576"/>
-<path class="corner" stroke="#00f0ff" stroke-width="2.5" fill="none" opacity=".9" d="M876 540 L876 576 L840 576"/>
+      <rect class="pill-bg" x="84" y="0" width="44" height="30" rx="6"/>
+      <text class="pill-text" x="106" y="19" text-anchor="middle">R</text>
 
-<text x="450" y="58" text-anchor="middle" class="title" fill="#00f0ff" filter="url(#softglow)">TECH STACK</text>
-<rect class="glowbar" x="350" y="72" width="200" height="2.5" fill="#ffb703" filter="url(#glow)"/>
-<text x="447" y="58" text-anchor="middle" class="title" fill="#00f0ff" style="animation: glitch 6s infinite; opacity:0;">TECH STACK</text>
-<text x="453" y="58" text-anchor="middle" class="title" fill="#f72585" style="animation: glitch 6s infinite .1s; opacity:0;">TECH STACK</text>
-<rect x="0" y="0" width="900" height="40" fill="url(#scanGrad)" style="animation: scan 5s linear infinite;"/>
+      <rect class="pill-bg" x="136" y="0" width="78" height="30" rx="6"/>
+      <text class="pill-text" x="175" y="19" text-anchor="middle">Pandas</text>
 
-<!-- CAT 1: ELECTRIC CYAN -->
-<text x="450" y="128" text-anchor="middle" class="cat" fill="#00f0ff" filter="url(#glow)">DATA ANALYSIS &amp; VISUALIZATION</text>
-<rect x="410" y="136" width="80" height="1.5" fill="#00f0ff" opacity="0.7"/>
-<g>
-<a href="https://learn.microsoft.com/en-us/power-bi/" target="_blank"><g class="pill" style="animation-delay:.00s"><rect x="226" y="158" width="100" height="34" rx="9" fill="#041b33" stroke="#00f0ff" stroke-width="1.5" filter="url(#glow)"/><text x="276" y="180" text-anchor="middle" class="pill-text" fill="#ffffff">POWER BI</text><rect class="trace" x="226" y="158" width="100" height="34" rx="9" stroke="#00f0ff" stroke-dasharray="30 250" style="animation-delay:.00s"/></g></a>
-<a href="https://www.tableau.com/developer/learning" target="_blank"><g class="pill" style="animation-delay:.10s"><rect x="342" y="158" width="94" height="34" rx="9" fill="#041b33" stroke="#00f0ff" stroke-width="1.5" filter="url(#glow)"/><text x="389" y="180" text-anchor="middle" class="pill-text" fill="#ffffff">TABLEAU</text><rect class="trace" x="342" y="158" width="94" height="34" rx="9" stroke="#00f0ff" stroke-dasharray="30 250" style="animation-delay:.10s"/></g></a>
-<a href="https://support.google.com/looker-studio" target="_blank"><g class="pill" style="animation-delay:.20s"><rect x="452" y="158" width="140" height="34" rx="9" fill="#041b33" stroke="#00f0ff" stroke-width="1.5" filter="url(#glow)"/><text x="522" y="180" text-anchor="middle" class="pill-text" fill="#ffffff">LOOKER STUDIO</text><rect class="trace" x="452" y="158" width="140" height="34" rx="9" stroke="#00f0ff" stroke-dasharray="30 250" style="animation-delay:.20s"/></g></a>
-<a href="https://d3js.org/" target="_blank"><g class="pill" style="animation-delay:.30s"><rect x="608" y="158" width="66" height="34" rx="9" fill="#041b33" stroke="#00f0ff" stroke-width="1.5" filter="url(#glow)"/><text x="641" y="180" text-anchor="middle" class="pill-text" fill="#ffffff">D3.JS</text><rect class="trace" x="608" y="158" width="66" height="34" rx="9" stroke="#00f0ff" stroke-dasharray="30 250" style="animation-delay:.30s"/></g></a>
-</g>
+      <rect class="pill-bg" x="222" y="0" width="76" height="30" rx="6"/>
+      <text class="pill-text" x="260" y="19" text-anchor="middle">NumPy</text>
 
-<!-- CAT 2: AMBER GOLD -->
-<text x="450" y="248" text-anchor="middle" class="cat" fill="#ffb703" filter="url(#glow)">DATA SCIENCE &amp; MACHINE LEARNING</text>
-<rect x="410" y="256" width="80" height="1.5" fill="#ffb703" opacity="0.7"/>
-<g>
-<a href="https://docs.python.org/3/" target="_blank"><g class="pill" style="animation-delay:.05s"><rect x="212" y="278" width="80" height="34" rx="9" fill="#241902" stroke="#ffb703" stroke-width="1.5" filter="url(#glow)"/><text x="252" y="300" text-anchor="middle" class="pill-text" fill="#ffffff">PYTHON</text><rect class="trace" x="212" y="278" width="80" height="34" rx="9" stroke="#ffb703" stroke-dasharray="30 250" style="animation-delay:.05s"/></g></a>
-<a href="https://www.r-project.org/other-docs.html" target="_blank"><g class="pill" style="animation-delay:.15s"><rect x="308" y="278" width="40" height="34" rx="9" fill="#241902" stroke="#ffb703" stroke-width="1.5" filter="url(#glow)"/><text x="328" y="300" text-anchor="middle" class="pill-text" fill="#ffffff">R</text><rect class="trace" x="308" y="278" width="40" height="34" rx="9" stroke="#ffb703" stroke-dasharray="30 250" style="animation-delay:.15s"/></g></a>
-<a href="https://pandas.pydata.org/docs/" target="_blank"><g class="pill" style="animation-delay:.25s"><rect x="364" y="278" width="84" height="34" rx="9" fill="#241902" stroke="#ffb703" stroke-width="1.5" filter="url(#glow)"/><text x="406" y="300" text-anchor="middle" class="pill-text" fill="#ffffff">PANDAS</text><rect class="trace" x="364" y="278" width="84" height="34" rx="9" stroke="#ffb703" stroke-dasharray="30 250" style="animation-delay:.25s"/></g></a>
-<a href="https://numpy.org/doc/" target="_blank"><g class="pill" style="animation-delay:.35s"><rect x="464" y="278" width="78" height="34" rx="9" fill="#241902" stroke="#ffb703" stroke-width="1.5" filter="url(#glow)"/><text x="503" y="300" text-anchor="middle" class="pill-text" fill="#ffffff">NUMPY</text><rect class="trace" x="464" y="278" width="78" height="34" rx="9" stroke="#ffb703" stroke-dasharray="30 250" style="animation-delay:.35s"/></g></a>
-<a href="https://scikit-learn.org/stable/" target="_blank"><g class="pill" style="animation-delay:.45s"><rect x="558" y="278" width="130" height="34" rx="9" fill="#241902" stroke="#ffb703" stroke-width="1.5" filter="url(#glow)"/><text x="623" y="300" text-anchor="middle" class="pill-text" fill="#ffffff">SCIKIT-LEARN</text><rect class="trace" x="558" y="278" width="130" height="34" rx="9" stroke="#ffb703" stroke-dasharray="30 250" style="animation-delay:.45s"/></g></a>
-</g>
+      <rect class="pill-bg" x="306" y="0" width="74" height="30" rx="6"/>
+      <text class="pill-text" x="343" y="19" text-anchor="middle">SciPy</text>
+    </g>
 
-<!-- CAT 3: ELECTRIC MAGENTA -->
-<text x="450" y="368" text-anchor="middle" class="cat" fill="#f72585" filter="url(#glow)">DATA ENGINEERING &amp; BIG DATA</text>
-<rect x="410" y="376" width="80" height="1.5" fill="#f72585" opacity="0.7"/>
-<g>
-<a href="https://www.sqlite.org/docs.html" target="_blank"><g class="pill" style="animation-delay:.00s"><rect x="117" y="398" width="78" height="34" rx="9" fill="#280316" stroke="#f72585" stroke-width="1.5" filter="url(#glow)"/><text x="156" y="420" text-anchor="middle" class="pill-text" fill="#ffffff">SQLITE</text><rect class="trace" x="117" y="398" width="78" height="34" rx="9" stroke="#f72585" stroke-dasharray="30 250" style="animation-delay:.00s"/></g></a>
-<a href="https://dev.mysql.com/doc/" target="_blank"><g class="pill" style="animation-delay:.10s"><rect x="207" y="398" width="74" height="34" rx="9" fill="#280316" stroke="#f72585" stroke-width="1.5" filter="url(#glow)"/><text x="244" y="420" text-anchor="middle" class="pill-text" fill="#ffffff">MYSQL</text><rect class="trace" x="207" y="398" width="74" height="34" rx="9" stroke="#f72585" stroke-dasharray="30 250" style="animation-delay:.10s"/></g></a>
-<a href="https://www.postgresql.org/docs/" target="_blank"><g class="pill" style="animation-delay:.20s"><rect x="293" y="398" width="114" height="34" rx="9" fill="#280316" stroke="#f72585" stroke-width="1.5" filter="url(#glow)"/><text x="350" y="420" text-anchor="middle" class="pill-text" fill="#ffffff">POSTGRESQL</text><rect class="trace" x="293" y="398" width="114" height="34" rx="9" stroke="#f72585" stroke-dasharray="30 250" style="animation-delay:.20s"/></g></a>
-<a href="https://www.mongodb.com/docs/" target="_blank"><g class="pill" style="animation-delay:.30s"><rect x="419" y="398" width="96" height="34" rx="9" fill="#280316" stroke="#f72585" stroke-width="1.5" filter="url(#glow)"/><text x="467" y="420" text-anchor="middle" class="pill-text" fill="#ffffff">MONGODB</text><rect class="trace" x="419" y="398" width="96" height="34" rx="9" stroke="#f72585" stroke-dasharray="30 250" style="animation-delay:.30s"/></g></a>
-<a href="https://hadoop.apache.org/docs/current/" target="_blank"><g class="pill" style="animation-delay:.40s"><rect x="527" y="398" width="84" height="34" rx="9" fill="#280316" stroke="#f72585" stroke-width="1.5" filter="url(#glow)"/><text x="569" y="420" text-anchor="middle" class="pill-text" fill="#ffffff">HADOOP</text><rect class="trace" x="527" y="398" width="84" height="34" rx="9" stroke="#f72585" stroke-dasharray="30 250" style="animation-delay:.40s"/></g></a>
-<a href="https://spark.apache.org/docs/latest/" target="_blank"><g class="pill" style="animation-delay:.50s"><rect x="623" y="398" width="74" height="34" rx="9" fill="#280316" stroke="#f72585" stroke-width="1.5" filter="url(#glow)"/><text x="660" y="420" text-anchor="middle" class="pill-text" fill="#ffffff">SPARK</text><rect class="trace" x="623" y="398" width="74" height="34" rx="9" stroke="#f72585" stroke-dasharray="30 250" style="animation-delay:.50s"/></g></a>
-<a href="https://flume.apache.org/documentation.html" target="_blank"><g class="pill" style="animation-delay:.60s"><rect x="709" y="398" width="74" height="34" rx="9" fill="#280316" stroke="#f72585" stroke-width="1.5" filter="url(#glow)"/><text x="746" y="420" text-anchor="middle" class="pill-text" fill="#ffffff">FLUME</text><rect class="trace" x="709" y="398" width="74" height="34" rx="9" stroke="#f72585" stroke-dasharray="30 250" style="animation-delay:.60s"/></g></a>
-</g>
+    <!-- Row 2 -->
+    <g transform="translate(20, 102)">
+      <rect class="pill-bg" x="0" y="0" width="108" height="30" rx="6"/>
+      <text class="pill-text" x="54" y="19" text-anchor="middle">Scikit-Learn</text>
 
-<!-- CAT 4: EMERALD TEAL -->
-<text x="450" y="488" text-anchor="middle" class="cat" fill="#00ff87" filter="url(#glow)">MLOPS &amp; DEEP LEARNING</text>
-<rect x="410" y="496" width="80" height="1.5" fill="#00ff87" opacity="0.7"/>
-<g>
-<a href="https://pytorch.org/docs/stable/index.html" target="_blank"><g class="pill" style="animation-delay:.05s"><rect x="128" y="518" width="90" height="34" rx="9" fill="#022115" stroke="#00ff87" stroke-width="1.5" filter="url(#glow)"/><text x="173" y="540" text-anchor="middle" class="pill-text" fill="#ffffff">PYTORCH</text><rect class="trace" x="128" y="518" width="90" height="34" rx="9" stroke="#00ff87" stroke-dasharray="30 250" style="animation-delay:.05s"/></g></a>
-<a href="https://www.tensorflow.org/api_docs" target="_blank"><g class="pill" style="animation-delay:.15s"><rect x="228" y="518" width="114" height="34" rx="9" fill="#022115" stroke="#00ff87" stroke-width="1.5" filter="url(#glow)"/><text x="285" y="540" text-anchor="middle" class="pill-text" fill="#ffffff">TENSORFLOW</text><rect class="trace" x="228" y="518" width="114" height="34" rx="9" stroke="#00ff87" stroke-dasharray="30 250" style="animation-delay:.15s"/></g></a>
-<a href="https://lightning.ai/docs/pytorch/latest/" target="_blank"><g class="pill" style="animation-delay:.25s"><rect x="352" y="518" width="100" height="34" rx="9" fill="#022115" stroke="#00ff87" stroke-width="1.5" filter="url(#glow)"/><text x="402" y="540" text-anchor="middle" class="pill-text" fill="#ffffff">LIGHTNING</text><rect class="trace" x="352" y="518" width="100" height="34" rx="9" stroke="#00ff87" stroke-dasharray="30 250" style="animation-delay:.25s"/></g></a>
-<a href="https://docs.wandb.ai/" target="_blank"><g class="pill" style="animation-delay:.35s"><rect x="462" y="518" width="60" height="34" rx="9" fill="#022115" stroke="#00ff87" stroke-width="1.5" filter="url(#glow)"/><text x="492" y="540" text-anchor="middle" class="pill-text" fill="#ffffff">W&amp;B</text><rect class="trace" x="462" y="518" width="60" height="34" rx="9" stroke="#00ff87" stroke-dasharray="30 250" style="animation-delay:.35s"/></g></a>
-<a href="https://mlflow.org/docs/latest/index.html" target="_blank"><g class="pill" style="animation-delay:.45s"><rect x="532" y="518" width="78" height="34" rx="9" fill="#022115" stroke="#00ff87" stroke-width="1.5" filter="url(#glow)"/><text x="571" y="540" text-anchor="middle" class="pill-text" fill="#ffffff">MLFLOW</text><rect class="trace" x="532" y="518" width="78" height="34" rx="9" stroke="#00ff87" stroke-dasharray="30 250" style="animation-delay:.45s"/></g></a>
-<a href="https://dvc.org/doc" target="_blank"><g class="pill" style="animation-delay:.55s"><rect x="620" y="518" width="54" height="34" rx="9" fill="#022115" stroke="#00ff87" stroke-width="1.5" filter="url(#glow)"/><text x="647" y="540" text-anchor="middle" class="pill-text" fill="#ffffff">DVC</text><rect class="trace" x="620" y="518" width="54" height="34" rx="9" stroke="#00ff87" stroke-dasharray="30 250" style="animation-delay:.55s"/></g></a>
-<a href="https://dagshub.com/docs/" target="_blank"><g class="pill" style="animation-delay:.65s"><rect x="684" y="518" width="88" height="34" rx="9" fill="#022115" stroke="#00ff87" stroke-width="1.5" filter="url(#glow)"/><text x="728" y="540" text-anchor="middle" class="pill-text" fill="#ffffff">DAGSHUB</text><rect class="trace" x="684" y="518" width="88" height="34" rx="9" stroke="#00ff87" stroke-dasharray="30 250" style="animation-delay:.65s"/></g></a>
-</g>
-<circle class="ember" cx="80" cy="560" r="1.8" fill="#00f0ff" style="animation-duration:4.2s; animation-delay:0s;"/>
-<circle class="ember" cx="150" cy="560" r="1.8" fill="#ffb703" style="animation-duration:5.1s; animation-delay:0.6s;"/>
-<circle class="ember" cx="230" cy="560" r="1.8" fill="#f72585" style="animation-duration:3.6s; animation-delay:1.2s;"/>
-<circle class="ember" cx="310" cy="560" r="1.8" fill="#00ff87" style="animation-duration:4.8s; animation-delay:1.8s;"/>
-<circle class="ember" cx="400" cy="560" r="1.8" fill="#00f0ff" style="animation-duration:5.4s; animation-delay:0.3s;"/>
-<circle class="ember" cx="470" cy="560" r="1.8" fill="#ffb703" style="animation-duration:4.0s; animation-delay:2.1s;"/>
-<circle class="ember" cx="540" cy="560" r="1.8" fill="#f72585" style="animation-duration:4.6s; animation-delay:1.0s;"/>
-<circle class="ember" cx="620" cy="560" r="1.8" fill="#00ff87" style="animation-duration:5.0s; animation-delay:0.8s;"/>
-<circle class="ember" cx="700" cy="560" r="1.8" fill="#00f0ff" style="animation-duration:4.3s; animation-delay:1.6s;"/>
-<circle class="ember" cx="780" cy="560" r="1.8" fill="#ffb703" style="animation-duration:3.9s; animation-delay:2.4s;"/>
-<circle class="ember" cx="830" cy="560" r="1.8" fill="#f72585" style="animation-duration:5.2s; animation-delay:0.4s;"/>
+      <rect class="pill-bg" x="116" y="0" width="154" height="30" rx="6"/>
+      <text class="pill-text" x="193" y="19" text-anchor="middle">Statistical Modeling</text>
+
+      <rect class="pill-bg" x="278" y="0" width="102" height="30" rx="6"/>
+      <text class="pill-text" x="329" y="19" text-anchor="middle">XGBoost</text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 3: DATA ENGINEERING & BIG DATA ==================== -->
+  <g transform="translate(24, 302)">
+    <rect x="0" y="0" width="420" height="180" rx="10" fill="#121215" stroke="#27272a" stroke-width="1"/>
+    <text x="20" y="32" class="card-header">03 // DATA ENGINEERING &amp; BIG DATA</text>
+    <line x1="20" y1="44" x2="400" y2="44" stroke="#27272a" stroke-width="1"/>
+    
+    <!-- Row 1 -->
+    <g transform="translate(20, 60)">
+      <rect class="pill-bg" x="0" y="0" width="102" height="30" rx="6"/>
+      <text class="pill-text" x="51" y="19" text-anchor="middle">PostgreSQL</text>
+
+      <rect class="pill-bg" x="110" y="0" width="76" height="30" rx="6"/>
+      <text class="pill-text" x="148" y="19" text-anchor="middle">MySQL</text>
+
+      <rect class="pill-bg" x="194" y="0" width="94" height="30" rx="6"/>
+      <text class="pill-text" x="241" y="19" text-anchor="middle">MongoDB</text>
+
+      <rect class="pill-bg" x="296" y="0" width="84" height="30" rx="6"/>
+      <text class="pill-text" x="338" y="19" text-anchor="middle">SQLite</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(20, 102)">
+      <rect class="pill-bg" x="0" y="0" width="118" height="30" rx="6"/>
+      <text class="pill-text" x="59" y="19" text-anchor="middle">Apache Spark</text>
+
+      <rect class="pill-bg" x="126" y="0" width="82" height="30" rx="6"/>
+      <text class="pill-text" x="167" y="19" text-anchor="middle">Hadoop</text>
+
+      <rect class="pill-bg" x="216" y="0" width="72" height="30" rx="6"/>
+      <text class="pill-text" x="252" y="19" text-anchor="middle">Flume</text>
+
+      <rect class="pill-bg" x="296" y="0" width="84" height="30" rx="6"/>
+      <text class="pill-text" x="338" y="19" text-anchor="middle">ETL / ELT</text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 4: MLOPS & DEEP LEARNING ==================== -->
+  <g transform="translate(456, 302)">
+    <rect x="0" y="0" width="420" height="180" rx="10" fill="#121215" stroke="#27272a" stroke-width="1"/>
+    <text x="20" y="32" class="card-header">04 // MLOPS &amp; DEEP LEARNING</text>
+    <line x1="20" y1="44" x2="400" y2="44" stroke="#27272a" stroke-width="1"/>
+    
+    <!-- Row 1 -->
+    <g transform="translate(20, 60)">
+      <rect class="pill-bg" x="0" y="0" width="82" height="30" rx="6"/>
+      <text class="pill-text" x="41" y="19" text-anchor="middle">PyTorch</text>
+
+      <rect class="pill-bg" x="90" y="0" width="102" height="30" rx="6"/>
+      <text class="pill-text" x="141" y="19" text-anchor="middle">TensorFlow</text>
+
+      <rect class="pill-bg" x="200" y="0" width="92" height="30" rx="6"/>
+      <text class="pill-text" x="246" y="19" text-anchor="middle">Lightning</text>
+
+      <rect class="pill-bg" x="300" y="0" width="80" height="30" rx="6"/>
+      <text class="pill-text" x="340" y="19" text-anchor="middle">W&amp;B</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(20, 102)">
+      <rect class="pill-bg" x="0" y="0" width="78" height="30" rx="6"/>
+      <text class="pill-text" x="39" y="19" text-anchor="middle">MLflow</text>
+
+      <rect class="pill-bg" x="86" y="0" width="60" height="30" rx="6"/>
+      <text class="pill-text" x="116" y="19" text-anchor="middle">DVC</text>
+
+      <rect class="pill-bg" x="154" y="0" width="94" height="30" rx="6"/>
+      <text class="pill-text" x="201" y="19" text-anchor="middle">DagsHub</text>
+
+      <rect class="pill-bg" x="256" y="0" width="124" height="30" rx="6"/>
+      <text class="pill-text" x="318" y="19" text-anchor="middle">CI/CD Pipelines</text>
+    </g>
+  </g>
 </svg>

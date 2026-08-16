@@ -1,114 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="260" height="78" viewBox="0 0 260 78" role="img" aria-label="THREADS">
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="68" viewBox="0 0 260 68" role="img" aria-label="Threads">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#030c1b"/>
-      <stop offset="55%"  stop-color="#0a192f"/>
-      <stop offset="100%" stop-color="#051329"/>
-    </linearGradient>
-
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#00f0ff"/>
-      <stop offset="50%"  stop-color="#00f0ff"/>
-      <stop offset="100%" stop-color="#00f0ff"/>
-    </linearGradient>
-
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="2.6" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="1.1"/>
-    </filter>
-
-    <clipPath id="clip">
-      <rect x="1.5" y="1.5" width="257" height="75" rx="12"/>
-    </clipPath>
-
-    <pattern id="grid" width="13" height="13" patternUnits="userSpaceOnUse">
-      <path d="M13 0H0V13" fill="none" stroke="#00f0ff" stroke-width="0.4" opacity="0.055"/>
-    </pattern>
-
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#00f0ff" stop-opacity="0"/>
-      <stop offset="45%"  stop-color="#00f0ff" stop-opacity="0.16"/>
-      <stop offset="55%"  stop-color="#fff"   stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
-    </linearGradient>
+    <radialGradient id="cardBgTh" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#1c1c21"/>
+      <stop offset="100%" stop-color="#121215"/>
+    </radialGradient>
+    <style>
+      .label {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        fill: #ffffff;
+      }
+      .sublabel {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 10px;
+        letter-spacing: 1px;
+        fill: #a1a1aa;
+      }
+    </style>
   </defs>
 
-  <!-- body -->
-  <rect x="1.5" y="1.5" width="257" height="75" rx="12" fill="url(#bg)"/>
-  <rect x="1.5" y="1.5" width="257" height="75" rx="12" fill="url(#grid)"/>
+  <!-- Card Body -->
+  <rect x="1" y="1" width="258" height="66" rx="10" fill="url(#cardBgTh)" stroke="#27272a" stroke-width="1"/>
 
-  <!-- glowing edge -->
-  <g filter="url(#glow)">
-    <rect x="1.5" y="1.5" width="257" height="75" rx="12"
-          fill="none" stroke="url(#edge)" stroke-width="1.5" opacity="0.9">
-      <animate attributeName="opacity" values="0.55;1;0.55" dur="3.4s"
-               begin="1.75s" repeatCount="indefinite"/>
-    </rect>
+  <!-- Threads Icon -->
+  <g transform="translate(20, 22)">
+    <rect x="0" y="0" width="24" height="24" rx="4" fill="#27272a"/>
+    <path d="M15.5 11.2c-.3-.2-.7-.4-1.2-.5-.1-1.8-1-2.9-2.7-2.9-1.9 0-3.1 1.4-3.1 3.5 0 2.2 1.2 3.6 3.1 3.6 1.3 0 2.3-.7 2.6-1.8.8.4 1.4 1.1 1.4 2.2 0 1.6-1.4 2.7-3.8 2.7-2.8 0-4.9-1.8-4.9-4.8s2-4.9 5-4.9c2.3 0 4.1 1.3 4.4 3.4h-1.6c-.2-1.3-1.4-2.1-2.8-2.1-2 0-3.3 1.3-3.3 3.6 0 2.2 1.3 3.5 3.2 3.5 1.5 0 2.4-.6 2.4-1.5 0-.7-.4-1.2-1.2-1.5zm-3.9 2.4c-1.1 0-1.7-.8-1.7-2.3 0-1.4.6-2.2 1.7-2.2 1.1 0 1.7.8 1.7 2.2 0 1.5-.6 2.3-1.7 2.3z" fill="#ffffff"/>
   </g>
 
-  <!-- travelling light sweep -->
-  <g clip-path="url(#clip)">
-    <rect x="-260" y="0" width="260" height="78" fill="url(#sweep)">
-      <animate attributeName="x" from="-260" to="260" dur="4.2s"
-               begin="1.75s" repeatCount="indefinite"/>
-    </rect>
-  </g>
+  <!-- Text -->
+  <text x="56" y="32" class="label">THREADS</text>
+  <text x="56" y="47" class="sublabel">@JosshuaDSA</text>
 
-  <!-- corner brackets -->
-  <g stroke="#00f0ff" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.95">
-    <path d="M10 20V13a3 3 0 0 1 3-3h7"/>
-    <path d="M250 20V13a3 3 0 0 0-3-3h-7"/>
-    <path d="M10 58v7a3 3 0 0 0 3 3h7"/>
-    <path d="M250 58v7a3 3 0 0 1-3 3h-7"/>
-  </g>
-
-  <!-- icon -->
-  <g transform="translate(24 27.0)">
-    <g filter="url(#soft)" opacity="0.75">
-      <path d="M16.4 11.4c-.2-4-4.6-4.6-6.6-2.8" fill="none" stroke="#00f0ff"
-            stroke-width="1.6" stroke-linecap="round"/>
-      <path d="M12.2 21.5C6.8 21.5 3 17.6 3 12S6.8 2.5 12.2 2.5c4.6 0 7.6 2.5 8.6 6"
-            fill="none" stroke="#00f0ff" stroke-width="1.7" stroke-linecap="round"/>
-      <path d="M16.5 11.6c2.3.6 3.4 2 3.2 3.9-.2 2.2-2.4 3.6-4.8 3-2.6-.6-3.6-3-3-5.4
-               .5-1.9 2.1-3 4.2-2.9 2.6.1 4.3 1.7 4.7 4.3" fill="none" stroke="#00f0ff"
-            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g>
-    
-      <path d="M16.4 11.4c-.2-4-4.6-4.6-6.6-2.8" fill="none" stroke="#00f0ff"
-            stroke-width="1.6" stroke-linecap="round"/>
-      <path d="M12.2 21.5C6.8 21.5 3 17.6 3 12S6.8 2.5 12.2 2.5c4.6 0 7.6 2.5 8.6 6"
-            fill="none" stroke="#00f0ff" stroke-width="1.7" stroke-linecap="round"/>
-      <path d="M16.5 11.6c2.3.6 3.4 2 3.2 3.9-.2 2.2-2.4 3.6-4.8 3-2.6-.6-3.6-3-3-5.4
-               .5-1.9 2.1-3 4.2-2.9 2.6.1 4.3 1.7 4.7 4.3" fill="none" stroke="#00f0ff"
-            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-
-  <!-- label -->
-  <text x="66" y="35.0" font-family="'Fira Code','JetBrains Mono',ui-monospace,monospace"
-        font-size="14.5" font-weight="700" letter-spacing="2.4" fill="#00f0ff">THREADS</text>
-
-  <!-- status line -->
-  <g>
-    <circle cx="70" cy="52.0" r="2.6" fill="#00f0ff">
-      <animate attributeName="opacity" values="1;0.15;1" dur="1.8s"
-               begin="1.75s" repeatCount="indefinite"/>
-    </circle>
-    <text x="79" y="56.0" font-family="'Fira Code',ui-monospace,monospace"
-          font-size="9.5" letter-spacing="1.6" fill="#ffb703">CONNECTED</text>
-  </g>
-
-  <!-- arrow -->
-  <g stroke="#00f0ff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M226 34.0 l5 5 -5 5">
-      <animate attributeName="opacity" values="0.35;1;0.35" dur="2.2s"
-               begin="1.75s" repeatCount="indefinite"/>
-    </path>
-    <path d="M232 34.0 l5 5 -5 5" opacity="0.4">
-      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="2.2s"
-               begin="2.0s" repeatCount="indefinite"/>
-    </path>
+  <!-- Arrow -->
+  <g stroke="#71717a" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M228 34h-10M223 29l5 5-5 5"/>
   </g>
 </svg>
