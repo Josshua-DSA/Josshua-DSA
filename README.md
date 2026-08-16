@@ -28,7 +28,7 @@
 <br/>
 
 <!-- ==================== INTERACTIVE CASE STUDIES ==================== -->
-<h3 align="center">📁 FEATURED WORKFLOWS &amp; CASE STUDIES</h3>
+<h3 align="center">FEATURED WORKFLOWS &amp; ARCHITECTURES</h3>
 
 <div align="center">
   <sub><em>Click to expand detailed architectural specifications and outcomes</em></sub>
@@ -37,7 +37,7 @@
 <br/>
 
 <details>
-  <summary><strong>01 // Distributed ETL Pipeline Architecture (PySpark · PostgreSQL · Airflow)</strong></summary>
+  <summary><strong>01 // Distributed ETL Pipeline Architecture (PySpark / PostgreSQL / Airflow)</strong></summary>
   <br/>
   
   > **Domain:** *Data Engineering & Distributed Systems*  
@@ -48,11 +48,11 @@
   > - Automated workflow scheduling, dependency handling, and retry policies managed via **Apache Airflow**.
   >
   > **Key Impact:** Reduced batch processing runtime by **65%** with automated data validation and zero data loss.  
-  > 🔗 [Explore Data Engineering Repositories →](https://github.com/Josshua-DSA?tab=repositories)
+  > [View Data Engineering Repositories](https://github.com/Josshua-DSA?tab=repositories)
 </details>
 
 <details>
-  <summary><strong>02 // End-to-End Predictive ML &amp; MLOps Lifecycle (PyTorch · MLflow · DVC · FastAPI)</strong></summary>
+  <summary><strong>02 // End-to-End Predictive ML &amp; MLOps Lifecycle (PyTorch / MLflow / DVC / FastAPI)</strong></summary>
   <br/>
   
   > **Domain:** *Machine Learning & MLOps Infrastructure*  
@@ -63,11 +63,11 @@
   > - Low-latency RESTful inference microservice built with **FastAPI** and packaged in Docker.
   >
   > **Key Impact:** Achieved **94.2% ROC-AUC** with automated continuous integration and seamless model rollback capabilities.  
-  > 🔗 [Explore Machine Learning Repositories →](https://github.com/Josshua-DSA?tab=repositories)
+  > [View Machine Learning Repositories](https://github.com/Josshua-DSA?tab=repositories)
 </details>
 
 <details>
-  <summary><strong>03 // Executive Analytics &amp; Decision Intelligence (Power BI · SQL · Looker Studio)</strong></summary>
+  <summary><strong>03 // Executive Analytics &amp; Decision Intelligence (Power BI / SQL / Looker Studio)</strong></summary>
   <br/>
   
   > **Domain:** *Business Intelligence & Data Storytelling*  
@@ -77,26 +77,17 @@
   > - Interactive, high-performance dashboards featuring multi-tier drill-downs and automated alert triggers in **Power BI** & **Looker Studio**.
   >
   > **Key Impact:** Consolidated 5+ disparate reporting sources into a unified real-time dashboard, cutting ad-hoc reporting time by **80%**.  
-  > 🔗 [Explore Analytics Dashboards →](https://github.com/Josshua-DSA?tab=repositories)
+  > [View Analytics Dashboards](https://github.com/Josshua-DSA?tab=repositories)
 </details>
 
 <br/>
 
-<!-- ==================== GITHUB ANALYTICS & STATS ==================== -->
-<h3 align="center">📊 ACTIVITY &amp; REPOSITORY METRICS</h3>
-
-<br/>
-
+<!-- ==================== LOCAL STATS & TELEMETRY ==================== -->
 <div align="center">
-  <a href="https://github.com/Josshua-DSA">
-    <img src="https://github-readme-stats.vercel.app/api?username=Josshua-DSA&show_icons=true&theme=transparent&bg_color=121215&border_color=27272a&title_color=ffffff&text_color=a1a1aa&icon_color=e4e4e7&hide_border=false&border_radius=10" height="165" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/Josshua-DSA">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Josshua-DSA&layout=compact&theme=transparent&bg_color=121215&border_color=27272a&title_color=ffffff&text_color=a1a1aa&hide_border=false&border_radius=10" height="165" alt="Top Languages" />
-  </a>
+  <img width="100%" src="./stats.svg" alt="Operational Profile & Practice Matrix" />
 </div>
 
-<br/><br/>
+<br/>
 
 <!-- ==================== CONNECT SECTION ==================== -->
 <div align="center">
