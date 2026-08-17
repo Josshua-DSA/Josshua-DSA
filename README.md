@@ -80,12 +80,24 @@
   > [View Analytics Dashboards](https://github.com/Josshua-DSA?tab=repositories)
 </details>
 
-<br/>
+<br/><br/>
 
-<!-- ==================== GITHUB STREAK CONTRIBUTOR ==================== -->
+<!-- ==================== CONNECT SECTION ==================== -->
 <div align="center">
-  <a href="https://github.com/Josshua-DSA">
-    <img width="100%" src="https://streak-stats.demolab.com?user=Josshua-DSA&theme=dark&background=121215&border=27272a&stroke=27272a&ring=10b981&fire=10b981&currStreakNum=ffffff&sideNums=e4e4e7&currStreakLabel=a1a1aa&sideLabels=71717a&dates=71717a&border_radius=10" alt="GitHub Streak Contributor" />
+  <img width="100%" src="./header.svg" alt="Connect and Collaborate" />
+  <br/><br/>
+  <a href="https://www.linkedin.com/in/joshua-remedial-syeba-0024a8326/" target="_blank">
+    <img src="./linkedin.svg" height="64" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/Josshua-DSA" target="_blank">
+    <img src="./github.svg" height="64" alt="GitHub" />
+  </a>
+  <br/>
+  <a href="https://instagram.com/jojieeezz" target="_blank">
+    <img src="./instagram.svg" height="64" alt="Instagram" />
+  </a>
+  <a href="https://t.me" target="_blank">
+    <img src="./telegram.svg" height="64" alt="Telegram" />
   </a>
 </div>
 
@@ -120,21 +132,9 @@
 
 <br/><br/>
 
-<!-- ==================== CONNECT SECTION ==================== -->
+<!-- ==================== GITHUB STREAK CONTRIBUTOR ==================== -->
 <div align="center">
-  <img width="100%" src="./header.svg" alt="Connect and Collaborate" />
-  <br/><br/>
-  <a href="https://www.linkedin.com/in/joshua-remedial-syeba-0024a8326/" target="_blank">
-    <img src="./linkedin.svg" height="64" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/Josshua-DSA" target="_blank">
-    <img src="./github.svg" height="64" alt="GitHub" />
-  </a>
-  <br/>
-  <a href="https://instagram.com/jojieeezz" target="_blank">
-    <img src="./instagram.svg" height="64" alt="Instagram" />
-  </a>
-  <a href="https://t.me" target="_blank">
-    <img src="./telegram.svg" height="64" alt="Telegram" />
+  <a href="https://github.com/Josshua-DSA">
+    <img width="100%" src="https://streak-stats.demolab.com?user=Josshua-DSA&theme=dark&background=121215&border=27272a&stroke=27272a&ring=10b981&fire=10b981&currStreakNum=ffffff&sideNums=e4e4e7&currStreakLabel=a1a1aa&sideLabels=71717a&dates=71717a&border_radius=10" alt="GitHub Streak Contributor" />
   </a>
 </div>
