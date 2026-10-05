@@ -111,7 +111,3 @@
 </div>
 end of the line
 
-
-
-
-
