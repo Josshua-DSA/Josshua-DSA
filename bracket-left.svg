@@ -9,6 +9,6 @@
   @keyframes p { 0%,100%{opacity:1} 50%{opacity:.35} }
 </style>
 </defs>
-<path d="M34 4 L10 4 L4 10 L4 24 L10 30 L34 30" fill="none" stroke="#00f0ff" stroke-width="2.2" filter="url(#g)" class="pulse"/>
-<circle cx="10" cy="17" r="3" fill="#00ff87" filter="url(#g)"/>
+<path d="M34 4 L10 4 L4 10 L4 24 L10 30 L34 30" fill="none" stroke="#89b4fa" stroke-width="2.2" filter="url(#g)" class="pulse"/>
+<circle cx="10" cy="17" r="3" fill="#a6e3a1" filter="url(#g)"/>
 </svg>

@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="90" viewBox="0 0 900 90" role="img" aria-label="Connect">
   <defs>
     <linearGradient id="dividerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#27272a" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#3f3f46"/>
-      <stop offset="50%" stop-color="#71717a"/>
-      <stop offset="75%" stop-color="#3f3f46"/>
-      <stop offset="100%" stop-color="#27272a" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#313244" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#45475a"/>
+      <stop offset="50%" stop-color="#585b70"/>
+      <stop offset="75%" stop-color="#45475a"/>
+      <stop offset="100%" stop-color="#313244" stop-opacity="0"/>
     </linearGradient>
 
     <style>
@@ -14,14 +14,14 @@
         font-size: 11px;
         font-weight: 600;
         letter-spacing: 3px;
-        fill: #a1a1aa;
+        fill: #a6adc8;
       }
       .connect-title {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Geist', sans-serif;
         font-size: 20px;
         font-weight: 800;
         letter-spacing: 3px;
-        fill: #ffffff;
+        fill: #cdd6f4;
       }
     </style>
   </defs>
@@ -32,5 +32,5 @@
 
   <!-- Divider Line -->
   <line x1="150" y1="74" x2="750" y2="74" stroke="url(#dividerGrad)" stroke-width="1"/>
-  <circle cx="450" cy="74" r="2.5" fill="#71717a"/>
+  <circle cx="450" cy="74" r="2.5" fill="#89b4fa"/>
 </svg>

@@ -7,7 +7,7 @@
 <!-- Dynamic Typing CLI -->
 <div align="center">
   <a href="https://github.com/Josshua-DSA">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&duration=3200&pause=1200&color=E4E4E7&center=true&vCenter=true&width=650&height=40&lines=%24+data-engine+--deploy+%22PySpark+Distributed+Pipeline%22+--status+%5BREADY%5D;%24+model-registry+--track+%22PyTorch+Deep+Learning+Model%22+--metrics+%5BAUC%3A+0.94%5D;%24+mlops-pipeline+--orchestrate+%22MLflow+%2B+DVC+%2B+FastAPI%22+%5BACTIVE%5D;%24+bi-analytics+--refresh+%22Power+BI+Executive+Dashboard%22+%5BSYNCED%5D" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&duration=3200&pause=1200&color=CDD6F4&center=true&vCenter=true&width=650&height=40&lines=%24+data-engine+--deploy+%22PySpark+Distributed+Pipeline%22+--status+%5BREADY%5D;%24+model-registry+--track+%22PyTorch+Deep+Learning+Model%22+--metrics+%5BAUC%3A+0.94%5D;%24+mlops-pipeline+--orchestrate+%22MLflow+%2B+DVC+%2B+FastAPI%22+%5BACTIVE%5D;%24+bi-analytics+--refresh+%22Power+BI+Executive+Dashboard%22+%5BSYNCED%5D" alt="Typing SVG" />
   </a>
 </div>
 
@@ -106,7 +106,7 @@
 <!-- ==================== GITHUB STREAK CONTRIBUTOR ==================== -->
 <div align="center">
   <a href="https://github.com/Josshua-DSA">
-    <img width="100%" src="https://streak-stats.demolab.com?user=Josshua-DSA&theme=dark&background=121215&border=27272a&stroke=27272a&ring=10b981&fire=10b981&currStreakNum=ffffff&sideNums=e4e4e7&currStreakLabel=a1a1aa&sideLabels=71717a&dates=71717a&border_radius=10" alt="GitHub Streak Contributor" />
+    <img width="100%" src="https://streak-stats.demolab.com?user=Josshua-DSA&theme=dark&background=181825&border=313244&stroke=313244&ring=89b4fa&fire=89b4fa&currStreakNum=cdd6f4&sideNums=bac2de&currStreakLabel=a6adc8&sideLabels=9399b2&dates=6c7086&border_radius=10" alt="GitHub Streak Contributor" />
   </a>
 </div>
 

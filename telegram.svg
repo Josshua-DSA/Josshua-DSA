@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="260" height="68" viewBox="0 0 260 68" role="img" aria-label="Telegram">
   <defs>
     <radialGradient id="cardBgTg" cx="50%" cy="0%" r="90%">
-      <stop offset="0%" stop-color="#1c1c21"/>
-      <stop offset="100%" stop-color="#121215"/>
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#181825"/>
     </radialGradient>
     <style>
       .label {
@@ -10,24 +10,24 @@
         font-size: 13.5px;
         font-weight: 700;
         letter-spacing: 1px;
-        fill: #ffffff;
+        fill: #cdd6f4;
       }
       .sublabel {
         font-family: 'JetBrains Mono', monospace;
         font-size: 10px;
         letter-spacing: 1px;
-        fill: #a1a1aa;
+        fill: #a6adc8;
       }
     </style>
   </defs>
 
   <!-- Card Body -->
-  <rect x="1" y="1" width="258" height="66" rx="10" fill="url(#cardBgTg)" stroke="#27272a" stroke-width="1"/>
+  <rect x="1" y="1" width="258" height="66" rx="10" fill="url(#cardBgTg)" stroke="#313244" stroke-width="1"/>
 
   <!-- Telegram Icon -->
   <g transform="translate(20, 22)">
-    <rect x="0" y="0" width="24" height="24" rx="4" fill="#27272a"/>
-    <path d="M18.8 6.2l-14 5.4c-1 .4-.95 1.5-.15 1.75l3.6 1.1 1.25 3.85c.15.45.6.6.95.3l2.2-1.8 3.7 2.7c.65.35 1.45.05 1.65-.7l2.4-11.3c.25-1-.65-1.75-1.6-1.3z" fill="#ffffff"/>
+    <rect x="0" y="0" width="24" height="24" rx="4" fill="#313244"/>
+    <path d="M18.8 6.2l-14 5.4c-1 .4-.95 1.5-.15 1.75l3.6 1.1 1.25 3.85c.15.45.6.6.95.3l2.2-1.8 3.7 2.7c.65.35 1.45.05 1.65-.7l2.4-11.3c.25-1-.65-1.75-1.6-1.3z" fill="#cdd6f4"/>
   </g>
 
   <!-- Text -->
@@ -35,7 +35,7 @@
   <text x="56" y="47" class="sublabel">@JosshuaDSA</text>
 
   <!-- Arrow -->
-  <g stroke="#71717a" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke="#a6adc8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M228 34h-10M223 29l5 5-5 5"/>
   </g>
 </svg>
