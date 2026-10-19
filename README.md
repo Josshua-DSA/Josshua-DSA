@@ -121,9 +121,9 @@
 
 <!-- ==================== GITHUB STATISTICS & LANGUAGES ==================== -->
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Josshua-DSA&show_icons=true&include_all_commits=true&count_private=true&bg_color=181825&border_color=313244&title_color=89b4fa&text_color=cdd6f4&icon_color=89b4fa&border_radius=10&custom_title=My+GitHub+Statistics" alt="Joshua's GitHub Stats" />
-  <br/><br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Josshua-DSA&card_width=467&layout=normal&bg_color=181825&border_color=313244&title_color=89b4fa&text_color=cdd6f4&border_radius=10&custom_title=My+Programming+Languages" alt="Top Languages" />
+  <img height="195" src="https://github-readme-stats.vercel.app/api?username=Josshua-DSA&show_icons=true&include_all_commits=true&count_private=true&bg_color=181825&border_color=313244&title_color=89b4fa&text_color=cdd6f4&icon_color=89b4fa&border_radius=10&custom_title=My+GitHub+Statistics" alt="Joshua's GitHub Stats" />
+  &nbsp;&nbsp;
+  <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Josshua-DSA&layout=compact&langs_count=6&bg_color=181825&border_color=313244&title_color=89b4fa&text_color=cdd6f4&border_radius=10&custom_title=My+Programming+Languages" alt="Top Languages" />
 </div>
 
 <br/><br/>
