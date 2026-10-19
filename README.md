@@ -98,28 +98,15 @@
 
 <br/><br/>
 
-<!-- ==================== CONNECT SECTION ==================== -->
+<!-- ==================== ENGINEERING ACTIVITY & METRICS ==================== -->
+<h3 align="center">ENGINEERING ACTIVITY &amp; REPOSITORY METRICS</h3>
+
 <div align="center">
-  <img width="100%" src="./header.svg" alt="Connect and Collaborate" />
-  <br/><br/>
-  <a href="https://www.linkedin.com/in/joshua-remedial-syeba-0024a8326/" target="_blank">
-    <img src="./linkedin.svg" height="64" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/Josshua-DSA" target="_blank">
-    <img src="./github.svg" height="64" alt="GitHub" />
-  </a>
-  <br/>
-  <a href="https://instagram.com/jojieeezz" target="_blank">
-    <img src="./instagram.svg" height="64" alt="Instagram" />
-  </a>
-  <a href="https://t.me" target="_blank">
-    <img src="./telegram.svg" height="64" alt="Telegram" />
-  </a>
+  <sub><em>Continuous development benchmarks, commit velocity, and language distribution</em></sub>
 </div>
 
-<br/><br/>
+<br/>
 
-<!-- ==================== GITHUB STATISTICS & LANGUAGES ==================== -->
 <div align="center">
   <img width="48.5%" src="https://github-readme-stats.vercel.app/api?username=Josshua-DSA&show_icons=true&include_all_commits=true&count_private=true&bg_color=181825&border_color=313244&title_color=89b4fa&text_color=cdd6f4&icon_color=89b4fa&border_radius=10&custom_title=My+GitHub+Statistics" alt="Joshua's GitHub Stats" />
   &nbsp;
