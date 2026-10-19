@@ -37,47 +37,63 @@
 <br/>
 
 <details>
-  <summary><strong>01 // Distributed ETL Pipeline Architecture (PySpark / PostgreSQL / Airflow)</strong></summary>
+  <summary><strong>01 // Spatial Health Data Engineering &amp; ETL Pipeline (PostGIS / FastAPI / Airflow)</strong></summary>
   <br/>
   
-  > **Domain:** *Data Engineering & Distributed Systems*  
-  > **Challenge:** High-latency ingestion and transformation across multi-source batch data without unified data quality checks.  
+  > **Domain:** *Spatial Data Engineering &amp; Public Health Infrastructure*  
+  > **Challenge:** Unifying fragmented multi-source public health records (facilities, medical workforce, disease burden) into a read-first spatial feature store with zero data loss.  
   > **Architecture:**
-  > - Distributed transformations engineered with **Apache Spark (PySpark)** for high-throughput partitioning.
-  > - Normalized dimensional data warehouse modeled in **PostgreSQL**.
-  > - Automated workflow scheduling, dependency handling, and retry policies managed via **Apache Airflow**.
+  > - High-performance spatial indexing and regional aggregates engineered in **PostgreSQL &amp; PostGIS**.
+  > - Automated scheduled ingestion workflows, retry policies, and UPSERT operations managed via **Apache Airflow**.
+  > - Low-latency RESTful spatial feature store and early-warning analytics service built with **FastAPI**.
   >
-  > **Key Impact:** Reduced batch processing runtime by **65%** with automated data validation and zero data loss.  
-  > [View Data Engineering Repositories](https://github.com/Josshua-DSA?tab=repositories)
+  > **Key Impact:** Enabled sub-second spatial querying across Jawa Timur regional health datasets with continuous data validation.  
+  > 🔗 [Explore OpenData-Cura](https://github.com/Josshua-DSA/OpenData-Cura) &nbsp;|&nbsp; [View Airflow ETL Pipeline](https://github.com/Josshua-DSA/ETL-Pipeline-with-Python-Operator_Team-Project)
 </details>
 
 <details>
-  <summary><strong>02 // End-to-End Predictive ML &amp; MLOps Lifecycle (PyTorch / MLflow / DVC / FastAPI)</strong></summary>
+  <summary><strong>02 // Quantitative Signal Engine &amp; Macro Sentiment Pipeline (ML / FinBERT / Backtesting)</strong></summary>
   <br/>
   
-  > **Domain:** *Machine Learning & MLOps Infrastructure*  
-  > **Challenge:** Eliminating training-serving skew, tracking model version drift, and enabling reproducible experiment pipelines.  
+  > **Domain:** *Quantitative Finance &amp; NLP Signal Infrastructure*  
+  > **Challenge:** Translating noisy macroeconomic news and equities data into calibrated trading signals while preventing look-ahead bias on the Indonesian Stock Exchange (IDX).  
   > **Architecture:**
-  > - Versioned datasets and preprocessing pipelines using **DVC (Data Version Control)**.
-  > - Model lifecycle tracking, hyperparameter tuning, and artifacts stored in **MLflow Model Registry**.
-  > - Low-latency RESTful inference microservice built with **FastAPI** and packaged in Docker.
+  > - Macro financial news pipeline transforming market text into calibrated bullish/bearish impacts using **FinBERT / RoBERTa** (**ARCAS**).
+  > - Modular CLI quantitative trading framework combining ML signal generation, risk-adjusted portfolio optimization, and out-of-sample backtesting (**Solidus-Folium**).
+  > - Strict layer separation between research feature validation and execution environments.
   >
-  > **Key Impact:** Achieved **94.2% ROC-AUC** with automated continuous integration and seamless model rollback capabilities.  
-  > [View Machine Learning Repositories](https://github.com/Josshua-DSA?tab=repositories)
+  > **Key Impact:** Validated risk-adjusted alpha strategies with rigorous walk-forward backtesting and deterministic macro association metrics.  
+  > 🔗 [Explore Solidus-Folium](https://github.com/Josshua-DSA/Solidus-folium) &nbsp;|&nbsp; [Explore ARCAS Sentiment Pipeline](https://github.com/Josshua-DSA/ARCAS)
 </details>
 
 <details>
-  <summary><strong>03 // Executive Analytics &amp; Decision Intelligence (Power BI / SQL / Looker Studio)</strong></summary>
+  <summary><strong>03 // Context-Aware Deep Learning &amp; Toxicity Detection (Dual-Input CNN / PyTorch)</strong></summary>
   <br/>
   
-  > **Domain:** *Business Intelligence & Data Storytelling*  
-  > **Challenge:** Siloed operational data across disparate databases preventing cross-functional executive visibility.  
+  > **Domain:** *Deep Learning &amp; Computational Linguistics*  
+  > **Challenge:** Combating extreme class imbalance, informal slang, and semantic ambiguity in Indonesian social media toxicity detection.  
   > **Architecture:**
-  > - Built robust star-schema data models and advanced DAX measures for real-time KPI aggregations.
-  > - Interactive, high-performance dashboards featuring multi-tier drill-downs and automated alert triggers in **Power BI** & **Looker Studio**.
+  > - Context-Aware **Dual-Input Multi-Kernel CNN** architecture engineered in **PyTorch** to capture simultaneous local n-gram patterns and contextual representations (**Vox**).
+  > - Formulated with **Focal Loss** optimization to penalize easy negatives and resolve severe toxic-to-neutral sample distribution skew.
+  > - Lexical preprocessing prioritizing insult and identity nuance over neutral topic tokens.
   >
-  > **Key Impact:** Consolidated 5+ disparate reporting sources into a unified real-time dashboard, cutting ad-hoc reporting time by **80%**.  
-  > [View Analytics Dashboards](https://github.com/Josshua-DSA?tab=repositories)
+  > **Key Impact:** Achieved high minority-class recall and robust generalization across Indonesian social media benchmarks.  
+  > 🔗 [Explore Vox Architecture](https://github.com/Josshua-DSA/Vox) &nbsp;|&nbsp; [View Indonesian Sentiment Analysis](https://github.com/Josshua-DSA/Sentiment-Analysis-KontenX)
+</details>
+
+<details>
+  <summary><strong>04 // Supply Chain Intelligence &amp; Decision Analytics (Forecasting / Power BI / Python)</strong></summary>
+  <br/>
+  
+  > **Domain:** *Business Intelligence &amp; Operations Intelligence*  
+  > **Challenge:** Siloed supply chain databases preventing proactive late shipment detection and objective supplier qualification.  
+  > **Architecture:**
+  > - Integrated demand forecasting, supplier evaluation algorithms, and late shipment risk classification models (**Neo-Horcrox**).
+  > - Interactive, high-performance dashboards with multi-tier drill-downs and predictive satisfaction recommendation layers (**Skyline**).
+  > - Automated KPI tracking and alert triggers connecting raw database tables to executive decision dashboards.
+  >
+  > **Key Impact:** Consolidated multi-source operational metrics into unified real-time risk intelligence, cutting manual assessment overhead by **80%**.  
+  > 🔗 [Explore Neo-Horcrox Platform](https://github.com/Josshua-DSA/Neo-Horcrox-Project) &nbsp;|&nbsp; [Explore Skyline System](https://github.com/Josshua-DSA/Skyline-RecommendationSystem)
 </details>
 
 <br/><br/>
@@ -99,6 +115,15 @@
   <a href="https://t.me" target="_blank">
     <img src="./telegram.svg" height="64" alt="Telegram" />
   </a>
+</div>
+
+<br/><br/>
+
+<!-- ==================== GITHUB STATISTICS & LANGUAGES ==================== -->
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Josshua-DSA&show_icons=true&include_all_commits=true&count_private=true&bg_color=181825&border_color=313244&title_color=89b4fa&text_color=cdd6f4&icon_color=89b4fa&border_radius=10&custom_title=My+GitHub+Statistics" alt="Joshua's GitHub Stats" />
+  <br/><br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Josshua-DSA&card_width=467&layout=normal&bg_color=181825&border_color=313244&title_color=89b4fa&text_color=cdd6f4&border_radius=10&custom_title=My+Programming+Languages" alt="Top Languages" />
 </div>
 
 <br/><br/>
